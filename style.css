@@ -1,25 +1,127 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
 
-background:#0d1b2a;
+font-family:Arial,Helvetica,sans-serif;
+
+background:#f4f6f9;
+
+color:#222;
+
+}
+
+header{
+
+background:#0b1f3a;
 
 color:white;
 
-font-family:Arial, Helvetica, sans-serif;
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 60px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+}
+
+section{
+
+padding:80px 10%;
+
+}
+
+#inicio{
+
+background:#0d47a1;
+
+color:white;
 
 text-align:center;
 
-padding-top:100px;
+padding:120px 10%;
 
 }
 
-h1{
+#inicio h2{
 
-font-size:60px;
+font-size:45px;
+
+margin-bottom:20px;
 
 }
 
-p{
+#inicio p{
 
-font-size:25px;
+font-size:22px;
+
+margin-bottom:35px;
+
+}
+
+.boton{
+
+background:#25D366;
+
+padding:18px 35px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.tarjetas{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.tarjeta{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+footer{
+
+background:#0b1f3a;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
 
 }
