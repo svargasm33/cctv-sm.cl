@@ -35,10 +35,10 @@ filterButtons.forEach(btn => {
 const serviceData = {
   camaras: {
     eyebrow: 'Cámaras de Seguridad',
-    title: 'Videovigilancia HD y 4K para tu hogar o empresa',
+    title: 'Videovigilancia',
     heroImg: 'images/hero-camera.jpg',
     text: [
-      'Instalamos sistemas de videovigilancia HD y 4K para hogares, empresas, condominios y comunidades, con visión nocturna, detección de movimiento y acceso remoto desde tu celular.',
+      'Somos especialistas en soluciones integrales de videovigilancia para el sector residencial y corporativo. Instalamos sistemas de cámaras HD y 4K con inteligencia artificial, reconocimiento facial y alertas de cruce perimetral. Equipamos tu hogar, junta de vecinos, empresa o condominio con tecnología de seguridad de vanguardia.',
       'Trabajamos con equipos certificados y un equipo técnico especializado en cada instalación, entregando soluciones confiables y adaptadas a las necesidades reales de cada proyecto.'
     ],
     gallery: [
