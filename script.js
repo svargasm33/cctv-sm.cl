@@ -35,10 +35,10 @@ filterButtons.forEach(btn => {
 const serviceData = {
   camaras: {
     eyebrow: 'Cámaras de Seguridad',
-    title: 'Videovigilancia',
+    title: 'Videovigilancia HD y 4K para tu hogar o empresa',
     heroImg: 'images/hero-camera.jpg',
     text: [
-      'Somos especialistas en soluciones integrales de videovigilancia para el sector residencial y corporativo. Instalamos sistemas de cámaras HD y 4K con inteligencia artificial, reconocimiento facial y alertas de cruce perimetral. Equipamos tu hogar, junta de vecinos, empresa o condominio con tecnología de seguridad de vanguardia.',
+      'Instalamos sistemas de videovigilancia HD y 4K para hogares, empresas, condominios y comunidades, con visión nocturna, detección de movimiento y acceso remoto desde tu celular.',
       'Trabajamos con equipos certificados y un equipo técnico especializado en cada instalación, entregando soluciones confiables y adaptadas a las necesidades reales de cada proyecto.'
     ],
     gallery: [
@@ -196,6 +196,46 @@ document.getElementById('cards-grid')?.addEventListener('click', (e) => {
 detailCloseBtn?.addEventListener('click', (e) => {
   e.preventDefault();
   closeDetailPanel();
+});
+
+// ===== Lightbox de imágenes de galería =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
+
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || '';
+  lightbox.hidden = false;
+  requestAnimationFrame(() => lightbox.classList.add('is-open'));
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('is-open');
+  document.body.style.overflow = '';
+  lightbox.addEventListener('transitionend', function handler() {
+    lightbox.hidden = true;
+    lightboxImg.src = '';
+    lightbox.removeEventListener('transitionend', handler);
+  });
+}
+
+detailGallery?.addEventListener('click', (e) => {
+  const item = e.target.closest('.detail-gallery-item:not(.is-video)');
+  if (!item) return;
+  const img = item.querySelector('img');
+  if (img) openLightbox(img.src, img.alt);
+});
+
+lightboxClose?.addEventListener('click', closeLightbox);
+
+lightbox?.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
 });
 
 // ===== Contact form -> WhatsApp =====
