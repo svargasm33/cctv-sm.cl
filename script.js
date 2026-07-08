@@ -31,32 +31,6 @@ filterButtons.forEach(btn => {
   });
 });
 
-// ===== Modal de Cámaras de Seguridad =====
-function openProductModal(category) {
-  const modal = document.getElementById('cameras-modal');
-  modal?.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeProductModal() {
-  const modal = document.getElementById('cameras-modal');
-  modal?.classList.remove('open');
-  document.body.style.overflow = 'auto';
-}
-
-// Cerrar modal al presionar ESC
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeProductModal();
-  }
-});
-
-// ===== Cotizar producto desde modal =====
-function cotizarProducto(producto) {
-  const texto = `Hola, me interesa cotizar el siguiente producto:%0A${producto}%0A%0A¿Puedes enviarme más información?`;
-  window.open(`https://wa.me/56959888902?text=${encodeURIComponent(texto)}`, '_blank');
-}
-
 // ===== Contact form -> WhatsApp =====
 const contactForm = document.getElementById('contact-form');
 
