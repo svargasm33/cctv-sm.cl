@@ -31,6 +31,41 @@ filterButtons.forEach(btn => {
   });
 });
 
+// ===== Panel Cámaras de Seguridad =====
+const camarasLink = document.getElementById('camaras-link');
+const camarasPanel = document.getElementById('camaras-panel');
+const camarasCloseBtn = document.getElementById('camaras-panel-close');
+
+function openCamarasPanel() {
+  camarasPanel.hidden = false;
+  requestAnimationFrame(() => camarasPanel.classList.add('is-open'));
+  camarasLink.textContent = 'Ocultar productos ↑';
+  camarasLink.setAttribute('aria-expanded', 'true');
+  setTimeout(() => {
+    camarasPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+function closeCamarasPanel() {
+  camarasPanel.classList.remove('is-open');
+  camarasLink.textContent = 'Ver productos →';
+  camarasLink.setAttribute('aria-expanded', 'false');
+  camarasPanel.addEventListener('transitionend', function handler() {
+    camarasPanel.hidden = true;
+    camarasPanel.removeEventListener('transitionend', handler);
+  });
+}
+
+camarasLink?.addEventListener('click', (e) => {
+  e.preventDefault();
+  camarasPanel.classList.contains('is-open') ? closeCamarasPanel() : openCamarasPanel();
+});
+
+camarasCloseBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  closeCamarasPanel();
+});
+
 // ===== Contact form -> WhatsApp =====
 const contactForm = document.getElementById('contact-form');
 
