@@ -1,221 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV-SM | Sistemas de Seguridad</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCTV-SM | Sistemas de Seguridad Electrónica</title>
+<meta name="description" content="Instalación y venta de cámaras de seguridad, alarmas, cercos eléctricos y control de acceso en la Región Metropolitana y todo Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                <div class="logo-text">CCTV-SM<small>Sistemas de Seguridad</small></div>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="main-nav" id="main-nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-            <div class="header-whatsapp">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                +56 9 5988 8902
-            </div>
-        </div>
-    </header>
-
-    <section id="inicio" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-copy">
-                <div class="eyebrow">Seguridad de Confianza</div>
-                <h1>Protegemos lo que más <span>te importa</span></h1>
-                <p class="hero-lead">Instalación y mantenimiento de cámaras de seguridad y sistemas de vigilancia para tu hogar o empresa.</p>
-                <ul class="hero-badges">
-                    <li><div class="badge-icon"></div> Equipos de alta tecnología</li>
-                    <li><div class="badge-icon"></div> Soporte técnico especializado</li>
-                </ul>
-                <div class="hero-cta">
-                    <a href="#contacto" class="btn btn-primary">Cotizar ahora</a>
-                    <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-photo" style="background-image: url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
-                <div class="rec-tag"><i></i> GRABANDO</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicios" class="services container">
-        <div class="center">
-            <div class="eyebrow">Nuestras Soluciones</div>
-            <h2 class="section-title">¿Qué necesitas proteger?</h2>
-        </div>
-        
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="camaras">Cámaras (CCTV)</button>
-            <button class="filter-btn" data-filter="redes">Redes y Mantenimiento</button>
-        </div>
-
-        <div class="cards-grid">
-            <div class="service-card" data-cat="camaras">
-                <h3>Instalación de Cámaras</h3>
-                <p>Sistemas de videovigilancia HD y 4K con acceso en tiempo real desde tu celular.</p>
-                <a href="#" class="card-link btn-ver-camaras">Ver catálogo de cámaras →</a>
-            </div>
-            <div class="service-card" data-cat="camaras">
-                <h3>Mantenimiento CCTV</h3>
-                <p>Revisión, limpieza y reconfiguración de sistemas ya instalados para un rendimiento óptimo.</p>
-            </div>
-            <div class="service-card" data-cat="redes">
-                <h3>Estructura de Redes</h3>
-                <p>Armado de gabinetes técnicos y cableado estructurado para garantizar conectividad.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="catalogo-camaras" class="products-detail-section">
-        <div class="container">
-            <div class="center detail-header">
-                <h2 class="section-title">Equipos Recomendados</h2>
-                <p>Selecciona la cámara que mejor se adapte a tus requerimientos. Todas incluyen instalación y configuración.</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-item-card">
-                    <span class="product-tag badge-popular">Más vendida</span>
-                    <div class="product-icon-wrapper">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14v-4z"></path><rect x="3" y="6" width="12" height="12" rx="2" ry="2"></rect></svg>
-                    </div>
-                    <h4>Domo Interior 2MP</h4>
-                    <p>Ideal para pasillos y recintos cerrados. Discreta y con gran ángulo de visión.</p>
-                    <ul class="product-features">
-                        <li>Resolución 1080p Full HD</li>
-                        <li>Visión nocturna por Infrarrojo</li>
-                        <li>Micrófono integrado</li>
-                    </ul>
-                    <button class="btn btn-primary full btn-elegir-camara" data-camara="Domo Interior 2MP">Elegir este equipo</button>
-                </div>
-                <div class="product-item-card">
-                    <span class="product-tag badge-advanced">Exterior</span>
-                    <div class="product-icon-wrapper">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
-                    </div>
-                    <h4>Bala Exterior 4MP</h4>
-                    <p>Diseñada para soportar la intemperie. Perfecta para perímetros y fachadas.</p>
-                    <ul class="product-features">
-                        <li>Resolución 4MP (2K)</li>
-                        <li>Protección IP67 (agua y polvo)</li>
-                        <li>Detección de movimiento avanzada</li>
-                    </ul>
-                    <button class="btn btn-primary full btn-elegir-camara" data-camara="Bala Exterior 4MP">Elegir este equipo</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="nosotros" class="about container">
-        <div class="about-grid">
-            <div>
-                <div class="eyebrow">Nosotros</div>
-                <h2 class="section-title">Trabajo metódico y ordenado</h2>
-                <p>Nuestra prioridad es dejar las instalaciones funcionales y prolijas. Sabemos la importancia de un montaje bien estructurado y un cableado limpio para la durabilidad del sistema.</p>
-                <ul class="about-list">
-                    <li>Diagnóstico preciso del problema.</li>
-                    <li>Uso de herramientas e insumos adecuados.</li>
-                    <li>Pruebas de funcionamiento post-instalación.</li>
-                </ul>
-            </div>
-            <div class="stats-list">
-                <div class="stat">
-                    <strong>+Seguridad</strong>
-                    <span>Para tu tranquilidad</span>
-                </div>
-                <div class="stat">
-                    <strong>100%</strong>
-                    <span>Compromiso técnico</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="contact">
-        <div class="container contact-grid">
-            <div>
-                <div class="eyebrow">Cotizaciones</div>
-                <h2 class="section-title">Agenda tu visita técnica</h2>
-                <p class="contact-lead">Completa el formulario y te enviaremos una propuesta acorde a las dimensiones de tu espacio.</p>
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        📍 <span>Región Metropolitana</span>
-                    </div>
-                    <div class="contact-card">
-                        📞 <span>+56 9 5988 8902</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <form id="contact-form" class="contact-form">
-                    <label>Tu Nombre
-                        <input type="text" name="nombre" required placeholder="Ingresa tu nombre">
-                    </label>
-                    <label>Teléfono o Email
-                        <input type="text" name="contacto" required placeholder="Para responderte">
-                    </label>
-                    <label>Detalles de lo que necesitas
-                        <textarea name="mensaje" id="mensaje" rows="4" required placeholder="Ej: Necesito revisar el cableado de mis cámaras antiguas..."></textarea>
-                    </label>
-                    <button type="submit" class="btn btn-primary full">Enviar directo a WhatsApp</button>
-                    <p class="form-note">Se abrirá WhatsApp con un mensaje pre-armado.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>© 2026 CCTV-SM. Servicios de seguridad y redes.</div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/56959888902" target="_blank" class="float-whatsapp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="36" height="36">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+          <path d="M12 26v-7a8 8 0 0 1 16 0v7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="20" cy="16.5" r="3.2" fill="currentColor"/>
+          <rect x="10" y="26" width="20" height="4" rx="2" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="logo-text">CCTV-SM<small>Sistemas de Seguridad</small></span>
     </a>
 
-    <script src="script.js"></script>
+    <nav class="main-nav" id="main-nav">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-    <script>
-        const btnVerCamaras = document.querySelector('.btn-ver-camaras');
-        const sectionCatalogo = document.getElementById('catalogo-camaras');
+    <a class="header-whatsapp" href="https://wa.me/56959888902" target="_blank" rel="noopener">
+      <span class="wa-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      </span>
+      +56 9 5988 8902
+    </a>
 
-        if (btnVerCamaras && sectionCatalogo) {
-            btnVerCamaras.addEventListener('click', (e) => {
-                e.preventDefault();
-                sectionCatalogo.classList.toggle('show');
-                if (sectionCatalogo.classList.contains('show')) {
-                    sectionCatalogo.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        }
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-        const btnsElegir = document.querySelectorAll('.btn-elegir-camara');
-        const textareaMensaje = document.getElementById('mensaje');
+<main>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Seguridad electrónica en Chile</p>
+        <h1>Protegemos<br><span>lo que más importa</span></h1>
+        <p class="hero-lead"> En CCTV-SM ayudamos a proteger lo que más importa. 
+          expertos en la instalación de sistemas de seguridad para juntas de vecinos, condominios, empresas y particulares, ofreciendo soluciones tecnológicas de alta calidad adaptadas a cada necesidad.
+        </p>
 
-        btnsElegir.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const modeloCamara = btn.getAttribute('data-camara');
-                textareaMensaje.value = `Hola, me interesa agendar una visita para la instalación de la cámara modelo: ${modeloCamara}.`;
-                document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
-                textareaMensaje.focus();
-            });
-        });
-    </script>
+        <ul class="hero-badges">
+          <li><span class="badge-icon"></span> Tecnología avanzada</li>
+          <li><span class="badge-icon"></span> Instalación profesional</li>
+          <li><span class="badge-icon"></span> Garantía y respaldo</li>
+        </ul>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/56959888902" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Cotizar por WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="tel:+56959888902">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.4.55 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .55 3.4 1 1 0 0 1-.25 1Z"/></svg>
+            Llamar ahora
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="scan-frame">
+          <img src="images/hero-camera.jpg" alt="" class="hero-photo">
+          <div class="scan-line"></div>
+        </div>
+        <span class="rec-tag"><i></i>REC · Monitoreo 24/7</span>
+      </div>
+    </div>
+
+    <div class="trust-bar">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon"></span>
+          <div><strong>Cobertura</strong><p>Región Metropolitana y todo Chile</p></div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon"></span>
+          <div><strong>Productos de calidad</strong><p>Equipos certificados y confiables</p></div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon"></span>
+          <div><strong>Soporte técnico</strong><p>Asistencia y mantención especializada</p></div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon"></span>
+          <div><strong>Cotización gratis</strong><p>Evaluamos tu proyecto sin compromiso</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <p class="eyebrow center">Nuestros servicios</p>
+      <h2 class="section-title center">Soluciones completas en seguridad</h2>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">Todos los productos</button>
+        <button class="filter-btn" data-filter="camaras">Cámaras de seguridad</button>
+        <button class="filter-btn" data-filter="alarmas">Alarmas</button>
+        <button class="filter-btn" data-filter="cercos">Cercos eléctricos</button>
+        <button class="filter-btn" data-filter="acceso">Control de acceso</button>
+        <button class="filter-btn" data-filter="otros">Otros</button>
+      </div>
+
+      <div class="cards-grid" id="cards-grid">
+        <article class="service-card" data-cat="camaras">
+          <div class="card-icon"></div>
+          <h3>Cámaras de Seguridad</h3>
+          <p>Sistemas CCTV HD y 4K, visión nocturna, detección de movimiento y acceso remoto.</p>
+          <a href="#contacto" class="card-link">Ver productos →</a>
+        </article>
+
+        <article class="service-card" data-cat="alarmas">
+          <div class="card-icon"></div>
+          <h3>Alarmas</h3>
+          <p>Alarmas para hogar y empresa, sensores de movimiento, apertura y sirenas.</p>
+          <a href="#contacto" class="card-link">Ver productos →</a>
+        </article>
+
+        <article class="service-card" data-cat="cercos">
+          <div class="card-icon"></div>
+          <h3>Cercos Eléctricos</h3>
+          <p>Instalación de cercos eléctricos certificados para máxima protección perimetral.</p>
+          <a href="#contacto" class="card-link">Ver productos →</a>
+        </article>
+
+        <article class="service-card" data-cat="acceso">
+          <div class="card-icon"></div>
+          <h3>Control de Acceso</h3>
+          <p>Control de acceso con huella digital, tarjetas, códigos y reconocimiento facial.</p>
+          <a href="#contacto" class="card-link">Ver productos →</a>
+        </article>
+
+        <article class="service-card" data-cat="otros">
+          <div class="card-icon"></div>
+          <h3>Otros Productos</h3>
+          <p>Videoporteros, citofonía, redes, UPS y accesorios para tu sistema de seguridad.</p>
+          <a href="#contacto" class="card-link">Ver productos →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="about">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">¿Quiénes somos?</p>
+        <h2 class="section-title">Experiencia y confianza en cada instalación</h2>
+        <p>
+          Somos una empresa dedicada a entregar soluciones integrales en seguridad
+          electrónica para hogares, empresas y condominios, con equipos certificados
+          y un servicio técnico especializado en cada etapa del proyecto.
+        </p>
+        <ul class="about-list">
+          <li>Diagnóstico y diseño de proyecto sin costo</li>
+          <li>Instalación por técnicos certificados</li>
+          <li>Garantía y mantención post-venta</li>
+        </ul>
+      </div>
+      <div class="stats-list">
+        <div class="stat"><strong>+10</strong><span>Años de experiencia</span></div>
+        <div class="stat"><strong>24/7</strong><span>Soporte técnico</span></div>
+        <div class="stat"><strong>100%</strong><span>Proyectos con garantía</span></div>
+      </div>
+      <div class="about-badge">
+        <img src="images/chilecompra-badge.png" alt="Proveedores registrados en ChileCompra Mercado Público y Compra Ágil">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Hablemos</p>
+        <h2 class="section-title">Cotiza tu proyecto de seguridad</h2>
+        <p class="contact-lead">Cuéntanos qué necesitas y te contactamos a la brevedad.</p>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="https://wa.me/56959888902" target="_blank" rel="noopener">
+            <span></span>
+            <div><strong>Teléfono / WhatsApp</strong><p>+56 9 5988 8902</p></div>
+          </a>
+          <a class="contact-card" href="mailto:mambicho@gmail.com">
+            <span></span>
+            <div><strong>Correo</strong><p>mambicho@gmail.com</p></div>
+          </a>
+          <div class="contact-card">
+            <span></span>
+            <div><strong>Cobertura</strong><p>Región Metropolitana y proyectos en todo Chile</p></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label>Nombre
+          <input type="text" name="nombre" required placeholder="Tu nombre">
+        </label>
+        <label>Teléfono o correo
+          <input type="text" name="contacto" required placeholder="¿Cómo te contactamos?">
+        </label>
+        <label>Cuéntanos tu proyecto
+          <textarea name="mensaje" rows="4" placeholder="Ej: cámaras para una casa de dos pisos"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Enviar consulta</button>
+        <p class="form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 CCTV-SM · Sistemas de Seguridad</span>
+    <span>Región Metropolitana, Chile</span>
+  </div>
+</footer>
+
+<a class="float-whatsapp" href="https://wa.me/56959888902" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  <span>Escríbenos por WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
