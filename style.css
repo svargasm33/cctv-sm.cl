@@ -214,14 +214,13 @@ img{ max-width: 100%; display: block; }
 
 /* ===== About ===== */
 .about{ padding: 72px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.about-grid{ display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; }
+.about-grid{ display: grid; grid-template-columns: 1.1fr 0.75fr 0.85fr; gap: 32px; align-items: center; }
 .about-copy p{ margin-top: 16px; max-width: 54ch; }
 .about-list{ margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
 .about-list li{ padding-left: 26px; position: relative; color: var(--ink); font-weight: 500; font-size: 0.94rem; }
 .about-list li::before{ content: "✓"; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
 
-.about-stats{ display: flex; align-items: center; gap: 24px; }
-.stats-list{ display: flex; flex-direction: column; gap: 16px; flex: 1; min-width: 0; }
+.stats-list{ display: flex; flex-direction: column; gap: 16px; }
 .stat{
   background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 20px 22px; display: flex; align-items: baseline; gap: 12px;
@@ -229,7 +228,7 @@ img{ max-width: 100%; display: block; }
 .stat strong{ font-family: var(--font-display); font-size: 1.7rem; color: var(--blue); }
 .stat span{ color: var(--muted); font-size: 0.88rem; font-weight: 600; }
 
-.about-badge{ flex-shrink: 0; width: 45%; max-width: 260px; }
+.about-badge{ width: 100%; }
 .about-badge img{
   width: 100%; border-radius: 14px; border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
@@ -287,8 +286,7 @@ a.contact-card:hover{ border-color: var(--blue); transform: translateX(3px); }
   .trust-grid{ grid-template-columns: repeat(2, 1fr); }
   .cards-grid{ grid-template-columns: repeat(2, 1fr); }
   .about-grid, .contact-grid{ grid-template-columns: 1fr; }
-  .about-stats{ flex-direction: column; align-items: stretch; }
-  .about-badge{ width: 100%; max-width: 320px; margin: 0 auto; }
+  .about-badge{ max-width: 320px; margin: 0 auto; }
 }
 
 @media (max-width: 720px){
