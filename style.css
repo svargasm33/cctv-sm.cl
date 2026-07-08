@@ -212,8 +212,9 @@ img{ max-width: 100%; display: block; }
 .card-link{ font-weight: 700; color: var(--blue); font-size: 0.88rem; }
 .service-card.hidden{ display: none; }
 
-/* ===== Panel Cámaras de Seguridad ===== */
-.camaras-panel{
+/* ===== Panel de detalle de servicio (hero + galería) ===== */
+.detail-panel{
+  position: relative;
   margin-top: 44px;
   padding-top: 36px;
   border-top: 1px solid var(--line);
@@ -221,24 +222,20 @@ img{ max-width: 100%; display: block; }
   max-height: 0;
   opacity: 0;
   transform: translateY(-8px);
-  transition: max-height 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
+  transition: max-height 0.6s ease, opacity 0.4s ease, transform 0.4s ease;
 }
-.camaras-panel[hidden]{ display: none; }
-.camaras-panel.is-open{
-  max-height: 2000px;
+.detail-panel[hidden]{ display: none; }
+.detail-panel.is-open{
+  max-height: 3000px;
   opacity: 1;
   transform: translateY(0);
 }
 
-.camaras-panel-head{
-  display: flex; align-items: flex-start; justify-content: space-between;
-  gap: 16px; margin-bottom: 24px;
-}
-.camaras-panel-head .eyebrow{ margin-bottom: 6px; }
-
-.camaras-panel-close{
-  flex-shrink: 0;
-  width: 36px; height: 36px;
+.detail-panel-close{
+  position: absolute;
+  top: 36px; right: 0;
+  z-index: 2;
+  width: 38px; height: 38px;
   border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--surface);
@@ -246,15 +243,100 @@ img{ max-width: 100%; display: block; }
   font-size: 1rem;
   line-height: 1;
   cursor: pointer;
+  box-shadow: var(--shadow-sm);
   transition: border-color 0.15s ease, color 0.15s ease, transform 0.2s ease;
 }
-.camaras-panel-close:hover{
+.detail-panel-close:hover{
   border-color: var(--blue);
   color: var(--blue);
   transform: rotate(90deg);
 }
 
-.camaras-products-grid{ margin-top: 0; }
+/* Hero de portada con overlay, estilo landing */
+.detail-hero{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 6.2;
+  min-height: 220px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--navy), var(--blue-deep));
+  box-shadow: var(--shadow-md);
+}
+.detail-hero-img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.detail-hero-overlay{
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 28px 32px;
+  background: linear-gradient(90deg, rgba(10,30,61,0.88) 0%, rgba(10,30,61,0.55) 55%, rgba(10,30,61,0.15) 100%);
+}
+.detail-hero-overlay .eyebrow{ color: #9DC0FF; margin-bottom: 8px; }
+.detail-hero-title{
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  max-width: 24ch;
+}
+
+.detail-body{ padding-top: 28px; max-width: 780px; }
+.detail-text p{ color: var(--ink); font-size: 1rem; margin-bottom: 14px; }
+.detail-text p:last-child{ margin-bottom: 0; }
+
+.detail-cta{ margin-top: 22px; }
+
+.detail-gallery-title{
+  margin-top: 40px; margin-bottom: 18px;
+  font-size: 1.1rem; font-weight: 700; color: var(--navy);
+}
+
+.detail-gallery{
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.detail-gallery-item{
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.detail-gallery-item img,
+.detail-gallery-item video{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.detail-gallery-item:hover img,
+.detail-gallery-item:hover video{ transform: scale(1.05); }
+.detail-gallery-item.is-video::after{
+  content: "▶";
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(10,30,61,0.65);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+@media (max-width: 720px){
+  .detail-hero{ aspect-ratio: 4 / 3.4; }
+  .detail-hero-overlay{ padding: 20px; }
+  .detail-gallery{ grid-template-columns: repeat(2, 1fr); }
+  .detail-panel-close{ top: 36px; }
+}
 
 /* ===== About ===== */
 .about{ padding: 72px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
