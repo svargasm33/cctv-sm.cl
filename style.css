@@ -220,6 +220,12 @@ img{ max-width: 100%; display: block; }
 .about-list li{ padding-left: 26px; position: relative; color: var(--ink); font-weight: 500; font-size: 0.94rem; }
 .about-list li::before{ content: "✓"; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
 
+.about-badge{ margin-top: 24px; max-width: 260px; }
+.about-badge img{
+  width: 100%; border-radius: 12px; border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
 .about-stats{ display: grid; grid-template-columns: 1fr; gap: 16px; }
 .stat{
   background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
