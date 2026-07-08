@@ -212,6 +212,50 @@ img{ max-width: 100%; display: block; }
 .card-link{ font-weight: 700; color: var(--blue); font-size: 0.88rem; }
 .service-card.hidden{ display: none; }
 
+/* ===== Panel Cámaras de Seguridad ===== */
+.camaras-panel{
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: max-height 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
+}
+.camaras-panel[hidden]{ display: none; }
+.camaras-panel.is-open{
+  max-height: 2000px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.camaras-panel-head{
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 16px; margin-bottom: 24px;
+}
+.camaras-panel-head .eyebrow{ margin-bottom: 6px; }
+
+.camaras-panel-close{
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--navy);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, transform 0.2s ease;
+}
+.camaras-panel-close:hover{
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: rotate(90deg);
+}
+
+.camaras-products-grid{ margin-top: 0; }
+
 /* ===== About ===== */
 .about{ padding: 72px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .about-grid{ display: grid; grid-template-columns: 1.1fr 0.75fr 0.85fr; gap: 32px; align-items: center; }
