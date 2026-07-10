@@ -49,11 +49,11 @@ const serviceData = {
   },
   alarmas: {
     eyebrow: 'Alarmas',
-    title: 'Sistemas de alarma para hogar y empresa',
+    title: 'Sistemas de Alarma Inteligentes para Hogar, Empresas y Comunidades',
     heroImg: 'images/alarmas-hero.jpg',
     text: [
-      'Instalamos sistemas de alarma con sensores de movimiento, apertura de puertas y ventanas, y sirenas de alta potencia. Ante cualquier intento de intrusión, el sistema notifica de inmediato a tu celular.',
-      'Ideal para casas, oficinas y locales comerciales que buscan una capa adicional de protección, con monitoreo simple desde una app.'
+      'Instalamos sistemas de alarma de última generación con sensores de movimiento, detección de apertura en puertas y ventanas, y sirenas de alta potencia. Ante cualquier intento de intrusión, el sistema te notifica de inmediato a tu celular.',
+      '"La solución perfecta para casas, oficinas, locales comerciales y áreas comunes que buscan una protección activa, fácil de gestionar y sin complicaciones desde una app.'
     ],
     gallery: [
       { type: 'image', src: 'images/alarmas-1.jpg' },
