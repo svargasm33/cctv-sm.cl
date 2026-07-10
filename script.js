@@ -53,7 +53,7 @@ const serviceData = {
     heroImg: 'images/alarmas-hero.jpg',
     text: [
       'Instalamos sistemas de alarma de última generación con sensores de movimiento, detección de apertura en puertas y ventanas, y sirenas de alta potencia. Ante cualquier intento de intrusión, el sistema te notifica de inmediato a tu celular.',
-      '"La solución perfecta para casas, oficinas, locales comerciales y áreas comunes que buscan una protección activa, fácil de gestionar y sin complicaciones desde una app.'
+      'La solución perfecta para casas, oficinas, locales comerciales y áreas comunes que buscan una protección activa, fácil de gestionar y sin complicaciones desde una app.'
     ],
     gallery: [
       { type: 'image', src: 'images/alarmas-1.jpg' },
