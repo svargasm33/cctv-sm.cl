@@ -95,6 +95,7 @@ const serviceData = {
     heroImg: 'images/otros-hero.jpg',
     text: [
       'Complementamos tu sistema de seguridad con videoporteros, citofonía, redes de datos y UPS de respaldo eléctrico, asegurando que tus equipos sigan funcionando ante un corte de luz.',
+      'También contamos con tecnología de detección de metales, ideal para accesos de empresas, eventos, colegios y recintos que requieren un control adicional de seguridad.',
       'Consulta por soluciones a medida según el tamaño y necesidades de tu proyecto.'
     ],
     gallery: [
